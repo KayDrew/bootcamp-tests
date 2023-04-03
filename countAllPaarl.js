@@ -1,8 +1,13 @@
 function countAllPaarl(regNumbers){
+
+  var count;
   
-  var list=regNumbers.split(", ");
-  var count=0;
-  
+    
+  if(regNumbers !=undefined){
+
+    var list=regNumbers.split(", ");
+    count=0;
+    
   for(var i=0;i<list.length;++i){
     
     if(list[i].startsWith("CJ")){
@@ -10,7 +15,10 @@ function countAllPaarl(regNumbers){
       count++;
        
        }
+      }
   }
 
 return count;
 }
+
+

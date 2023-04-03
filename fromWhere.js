@@ -1,4 +1,6 @@
 function  fromWhere(regNumber){
+
+  if(regNumber!=undefined){
  
   switch(regNumber){
                   
@@ -19,5 +21,6 @@ function  fromWhere(regNumber){
       break;
       
                   }
+             }
 
 }

@@ -1,4 +1,7 @@
 function totalPhoneBill(data){
+
+
+  if(data!=undefined){
   
   var dataList=data.split(", ");
   var bill=0;
@@ -16,7 +19,7 @@ function totalPhoneBill(data){
     }
   
   }
-  
+}
   bill=parseFloat(bill).toFixed(2);
   return  "R"+ bill;
 }
