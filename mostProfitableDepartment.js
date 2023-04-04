@@ -3,6 +3,8 @@ function mostProfitableDepartment(list){
   var productMap={};
   var profitable="";
   
+  if(list!=undefined){
+
   for(var i=0;i<list.length;++i){
         
   var item=list[i].department;
@@ -20,14 +22,15 @@ function mostProfitableDepartment(list){
     
   }
    
+   }
   var arr=Object.values(productMap);
  var highSale= Math.max(...arr);  
     
-    for(dept in productMap){
+    for(var department in productMap){
     
-      if(productMap[dept]===highSale){
+      if(productMap[department]===highSale){
       
-      profitable=dept;
+      profitable=department;
       }
     
     }   

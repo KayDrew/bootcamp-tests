@@ -1,6 +1,6 @@
 describe('regCheck test' , function(){
     
-    it('Return true when the two arguments exactly match' , function(){
+    it('Return true when the two arguments exactly match.' , function(){
 
         assert.equal(true,regCheck('EC','EC'));
 

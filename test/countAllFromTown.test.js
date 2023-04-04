@@ -4,7 +4,10 @@ describe("Test for countAllFromTown",function(){
 
 assert.equal(2,countAllFromTown("CJ 123, GP 321, CD 678, CJ 666","CJ"));
 
-assert.equal(0,countAllFromTown("CA 123, GP 321, CD 678, CA 666","MP"));
+assert.equal(3,countAllFromTown("CA 123, CA 321, CD 678, CA 666,","CA"));
+
+
+assert.equal(1,countAllFromTown("CA 123, GP 321, MP 678, CA 666","MP"));
 
 assert.equal(0,countAllFromTown("CA 564,GP 123",));
 

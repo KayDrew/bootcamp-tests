@@ -9,7 +9,7 @@ describe('Test for isWeekday' , function(){
         assert.equal(false,isWeekday(''));
 
         assert.equal(true,isWeekday("Tuesday"));
-
+assert.deepEqual(true,isWeekday("Monday"));
         assert.deepEqual(false,isWeekday());
 
         
