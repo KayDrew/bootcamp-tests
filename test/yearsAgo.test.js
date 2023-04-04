@@ -4,7 +4,7 @@
         assert.equal(3,yearsAgo(2020));
         });
         
-    it("return the zero if the entered  year is the same as the current year and the entered year. ",function(){
+    it("return zero if the entered  year is the same as the current year. ",function(){
         assert.equal(0,yearsAgo(2023));
         });
         

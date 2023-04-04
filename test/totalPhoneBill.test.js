@@ -10,7 +10,7 @@ assert.equal("R0.65",totalPhoneBill("sms"));
 assert.equal("R2.75",totalPhoneBill("call"));
 });
 
-    it("return the R0.00 if user passed empty string as input.",function(){
+    it("return R0.00 if user passed empty string as input.",function(){
 assert.equal("R0.00",totalPhoneBill(""));
 
 
