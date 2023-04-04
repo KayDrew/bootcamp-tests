@@ -1,18 +1,21 @@
 describe('Test for isWeekday' , function(){
 
-    it('Return true if it is a weekday' , function(){
+    it('Return true if it is a weekday(Friday)' , function(){
 
         assert.equal(true,isWeekday("Friday"));
-
+     });
+   
+    it('Return false if it is NOT  a weekday(Saturday)' , function(){
         assert.deepEqual(false,isWeekday("Saturday"));
+});
 
-        assert.equal(false,isWeekday(''));
-
-        assert.equal(true,isWeekday("Tuesday"));
-assert.deepEqual(true,isWeekday("Monday"));
-        assert.deepEqual(false,isWeekday());
-
+    it('Return false if user input is an empty string' , function(){
+        assert.equal(false,isWeekday(''));   
+        });
         
-    });
+    it('Return false if there is no input' , function(){   
+        assert.deepEqual(false,isWeekday());
+});
+        
 
 });

@@ -1,13 +1,17 @@
 
-describe('countRegNumber test' , function(){
+describe('Test for countRegNumber ' , function(){
 
-    it('Return the number of registration numbers passed in the argument' , function(){
+    it('Return the number of registration(3) numbers passed in the argument' , function(){
 
         assert.equal(3,countRegNumber("CA 182736,CY 523519,CJ 812328"));
+   });
    
+       it('Return "undefined" when user has not passed any argument' , function(){
         assert.equal(undefined,countRegNumber());
+});
 
-        assert.equal(1,countRegNumber('CA 182736'));
+    it('Return zero when user passes empty argument' , function(){
+        assert.equal(0,countRegNumber(''));
 
     
 

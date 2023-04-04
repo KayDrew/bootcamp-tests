@@ -1,6 +1,9 @@
 function findItemsOver(list,quantity){
 
     var overThreshold=[];
+    
+    if(list!=undefined && quantity!=undefined)
+  {  
     for(let i=0;i<list.length;++i){
 
         var product=list[i];
@@ -10,6 +13,6 @@ function findItemsOver(list,quantity){
             overThreshold.push(product);
         }
     }
-
+}
     return overThreshold;
 }

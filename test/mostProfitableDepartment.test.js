@@ -46,14 +46,15 @@ var salesData2 = [
 
 describe("test for mostProfitableDepartment", function (){
 
-    it("return the most profitable department from a passed list of items",function(){
-
+    it("return the most profitable department from a passed list of items(outdoor)",function(){
 assert.equal('outdoor', mostProfitableDepartment(salesData));
-
+});
+    it("return the most profitable department from a passed list of items(electronics)",function(){
 assert.equal('electronics', mostProfitableDepartment(salesData2));
-
+});
+    it("return an empty string if no argument  is passed.",function(){
 assert.equal('', mostProfitableDepartment ());
+});
 
-
-    });
+    
 });
